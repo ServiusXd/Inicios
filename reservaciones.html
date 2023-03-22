@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+</head>
+<body>
+    <form id="formulariopciones" name="formulariopciones" method="post" action="revision.php">
+        A nombre de quién será la reservacion? <i>(un solo nombre por favor)</i>
+        <br><input type="text" name="nombre" id="nombre"><br><br>
+        Cuando deseas tu reservacion:
+        <br><input type="date" name="fecha" id="fecha" value="2023-03-22" min="2023-03-24" max="2030-12-31"><br><br>
+        A qué hora?:
+        <br><input type="time" name="hora" id="hora"><br><br>
+        Cuantas personas?: <i>(máximo 15)</i>
+        <br><input type="text" name="personas" id="personas"><br><br>
+        En qué area desea su reservacion?:
+        <br><select id="area" name="area">
+            <option value="1">Terraza</option>
+            <option value="2">Bar</option>
+            <option value="3">Zona familiar</option>
+            <option value="4">La que sea</option>
+        </select><br><br>
+        <input type="submit" name="confirmar_reserva" id="confirmar_reserva" value="Confirmar reservacion">
+    </form>
+</body>
+</html>
